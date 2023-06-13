@@ -1,8 +1,7 @@
 site_name: GeaFlow Docs
 
 theme:
-  name: null
-  custom_dir: './docs/.cinder'
+  name: cerulean
 
 plugins:
   - include-markdown
