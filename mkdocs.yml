@@ -1,7 +1,8 @@
 site_name: GeaFlow Docs
 
 theme:
-  name: yeti
+  name: cerulean
+  nav_style: dark
 
 plugins:
   - include-markdown
