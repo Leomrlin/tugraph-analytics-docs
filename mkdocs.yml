@@ -1,7 +1,7 @@
 site_name: GeaFlow Docs
 
 theme:
-  name: cerulean
+  name: yeti
 
 plugins:
   - include-markdown
