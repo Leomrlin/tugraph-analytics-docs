@@ -57,7 +57,7 @@ public class RedisHAServiceTest {
         haService.open(configuration);
 
         ResourceData resourceData = new ResourceData();
-        resourceData.setHost(ProcessUtil.getHostname());
+        resourceData.setHost("127.0.0.1");
         resourceData.setRpcPort(6055);
         haService.register("1", resourceData);
         ResourceData result = haService.resolveResource("1");
@@ -79,6 +79,7 @@ public class RedisHAServiceTest {
 
         CountDownLatch latch = new CountDownLatch(1);
         String resourceId = "test-multi-thread";
+        CountDownLatch latch = new CountDownLatch(1);
         executorService.execute(() -> {
             while (true) {
                 ResourceData resourceData = new ResourceData();
